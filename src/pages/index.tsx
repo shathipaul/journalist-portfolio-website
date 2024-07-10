@@ -1,4 +1,5 @@
 import About from "@/components/home/About";
+import ArticlesBtn from "@/components/home/ArticlesBtn";
 import Education from "@/components/home/Education";
 import WorkExperience from "@/components/home/WorkExperience";
 import Layout from "@/layout/Layout";
@@ -10,6 +11,7 @@ export default function Home() {
       <About />
       <WorkExperience />
       <Education />
+      <ArticlesBtn />
     </div>
   );
 }
