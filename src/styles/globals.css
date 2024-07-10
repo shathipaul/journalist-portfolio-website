@@ -2,14 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: "futureLTW01Medium";
+  src: local("futureLTW01Medium"),
+    url(../assets/font/Web-Fonts/77d394fa0c1103c648f880b77cb4a32f.woff)
+      format("woff");
+}
+
+.baskervville-font {
+  font-family: "Baskervville", serif;
+  font-weight: 600;
+  font-style: italic;
+}
 
 body {
-  font-family: "Wix Madefor Text", sans-serif;
+  font-family: "futureLTW01Medium";
+  line-height: 1.7em;
+  letter-spacing: 0.7px;
+  font-size: 15px;
+  color: #383838;
 }

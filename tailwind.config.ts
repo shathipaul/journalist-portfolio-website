@@ -22,7 +22,7 @@ module.exports = {
     },
     // our colors theme
     colors: {
-      primary: "#262826",
+      primary: "#383838",
       secondary: "#6E717A",
       black: "#000000",
       white: "#ffffff",
