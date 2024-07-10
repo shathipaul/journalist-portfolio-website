@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
-    <div className="text-center text-sm py-10 px-4">
-      © 2035 by Jessica Priston. All rights are reserved
+    <div className="bg-secondary text-center text-sm py-4 px-4">
+      © 2024 by Jessica Priston. All rights are reserved
     </div>
   );
 };

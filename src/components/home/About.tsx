@@ -2,7 +2,7 @@ const About = () => {
   return (
     <div
       className="flex flex-col gap-10
-     justify-center items-center py-10 px-4 mb-20"
+     justify-center items-center py-10 px-4 mb-10"
     >
       <h2 className="capitalize italic text-[28px] md:text-[35px] baskervville-font">
         About me

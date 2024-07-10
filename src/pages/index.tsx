@@ -1,5 +1,6 @@
 import About from "@/components/home/About";
 import ArticlesBtn from "@/components/home/ArticlesBtn";
+import Contact from "@/components/home/Contact";
 import Education from "@/components/home/Education";
 import WorkExperience from "@/components/home/WorkExperience";
 import Layout from "@/layout/Layout";
@@ -10,8 +11,12 @@ export default function Home() {
     <div>
       <About />
       <WorkExperience />
+      <div className="border border-secondary w-20 m-auto rotate-[270deg]"></div>
       <Education />
+      <div className="border border-secondary w-20 m-auto rotate-[270deg]"></div>
       <ArticlesBtn />
+      <div className="border border-secondary w-20 m-auto rotate-[270deg]"></div>
+      <Contact />
     </div>
   );
 }
