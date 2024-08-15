@@ -1,6 +1,9 @@
 import Link from "next/link";
+import { Fade as Hamburger } from "hamburger-react";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [isOpen, setOpen] = useState(false);
   const menuData = [
     { name: "Home", link: "/" },
     { name: "Articles", link: "/articles" },
@@ -16,6 +19,7 @@ const Navbar = () => {
           {data.name}
         </Link>
       ))}
+      <Hamburger toggled={isOpen} toggle={setOpen} />
     </div>
   );
 };

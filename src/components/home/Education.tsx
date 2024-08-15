@@ -12,7 +12,7 @@ const Education = () => {
     },
   ];
   return (
-    <div className="max-w-[280px] md:max-w-[600px] m-auto my-10">
+    <div className="max-w-[280px] md:max-w-[500px] lg:max-w-[700px] m-auto my-10">
       <div
         className="flex flex-col gap-10
      justify-center items-center py-10 px-4 border-4 border-secondary"
