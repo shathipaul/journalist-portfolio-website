@@ -1,6 +1,7 @@
 const About = () => {
   return (
     <div
+      id="about"
       className="flex flex-col gap-10
      justify-center items-center py-10 px-4 mb-10"
     >

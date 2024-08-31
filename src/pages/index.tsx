@@ -5,11 +5,13 @@ import Contact from "@/components/home/Contact";
 import Education from "@/components/home/Education";
 import WorkExperience from "@/components/home/WorkExperience";
 import Layout from "@/layout/Layout";
+import SideNav from "@/shared/navbar/SideNav";
 import { ReactElement } from "react";
 
 export default function Home() {
   return (
-    <>
+    <div className="relative">
+      <SideNav />
       <Banner />
       <About />
       <WorkExperience />
@@ -19,7 +21,7 @@ export default function Home() {
       <ArticlesBtn />
       <div className="border border-secondary w-20 m-auto rotate-[270deg]"></div>
       <Contact />
-    </>
+    </div>
   );
 }
 

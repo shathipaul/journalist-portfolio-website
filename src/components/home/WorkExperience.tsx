@@ -14,7 +14,10 @@ const WorkExperience = () => {
     },
   ];
   return (
-    <div className="max-w-[280px] md:max-w-[560px] lg:max-w-[880px] m-auto mb-10">
+    <div
+      id="work"
+      className="max-w-[280px] md:max-w-[560px] lg:max-w-[880px] m-auto mb-10"
+    >
       <div
         className="flex flex-col gap-10
      justify-center items-center py-10 px-4 border-4 border-secondary"

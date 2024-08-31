@@ -1,10 +1,12 @@
 import Link from "next/link";
 import { Fade as Hamburger } from "hamburger-react";
 import { useEffect, useState, useRef } from "react";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
+  const router = useRouter();
 
   const menuData = [
     { name: "Home", link: "/" },
@@ -49,12 +51,14 @@ const Navbar = () => {
 
   return (
     <nav className="bg-secondary relative">
-      <div className="hidden md:block py-4 md:ps-20 lg:ps-40">
+      <div className="hidden md:block py-6 md:ps-20 lg:ps-48">
         {menuData.map((data, index) => (
           <Link
             key={index}
             href={data.link}
-            className="px-4 text-lg font-medium"
+            className={`px-4 text-base font-medium ${
+              router.pathname === data.link ? "text-primary" : "text-gray"
+            }`}
           >
             {data.name}
           </Link>
@@ -76,7 +80,7 @@ const Navbar = () => {
               key={index}
               href={data.link}
               className="py-4 px-10 text-base font-medium"
-              onClick={() => setOpen(false)} // Close the menu when clicking on a link
+              onClick={() => setOpen(false)}
             >
               {data.name}
             </Link>
