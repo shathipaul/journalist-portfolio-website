@@ -9,7 +9,7 @@ import { ReactElement } from "react";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Banner />
       <About />
       <WorkExperience />
@@ -19,7 +19,7 @@ export default function Home() {
       <ArticlesBtn />
       <div className="border border-secondary w-20 m-auto rotate-[270deg]"></div>
       <Contact />
-    </div>
+    </>
   );
 }
 
