@@ -1,8 +1,13 @@
+import ArticlesCard from "@/components/articles/ArticlesCard";
 import Layout from "@/layout/Layout";
 import { ReactElement } from "react";
 
 const Articles = () => {
-  return <div>Articles</div>;
+  return (
+    <div>
+      <ArticlesCard />
+    </div>
+  );
 };
 
 export default Articles;

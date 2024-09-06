@@ -27,6 +27,8 @@ module.exports = {
       black: "#000000",
       white: "#ffffff",
       gray: "#5C5D5F",
+      semiGray: "#E0E0E0",
+      lightGray: "#EEEEEE",
     },
     container: {
       center: true,

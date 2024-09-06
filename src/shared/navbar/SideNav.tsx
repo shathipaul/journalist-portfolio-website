@@ -48,8 +48,8 @@ const SideNav = () => {
     };
   }, []);
   return (
-    <div className="fixed top-1/2 right-6 transform -translate-y-1/2">
-      <div className="flex flex-col justify-center gap-1">
+    <div className="hidden xl:block fixed top-1/2 right-6 transform -translate-y-1/2">
+      <div className="flex flex-col justify-center gap-1 w-[90px]">
         {sideMenuData.map((data, index) => (
           <div key={index} className="flex items-center justify-between">
             <div
