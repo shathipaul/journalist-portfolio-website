@@ -1,6 +1,7 @@
 [
   {
-    "blogImage": "../src/assets/article/img1.webp",
+    "articleId": 1,
+    "blogImage": "https://i.ibb.co.com/LSt0kqj/img1.jpg",
     "date": "21 Mar 2023",
     "time": "2 mins read",
     "title": "My new office",
@@ -28,7 +29,8 @@
     ]
   },
   {
-    "blogImage": "../src/assets/article/img1.webp",
+    "articleId": 2,
+    "blogImage": "https://i.ibb.co.com/t49T9dX/img2.jpg",
     "date": "21 Mar 2023",
     "time": "2 mins read",
     "title": "5 years after the financial crisis",
@@ -62,7 +64,8 @@
     ]
   },
   {
-    "blogImage": "../src/assets/article/img1.webp",
+    "articleId": 3,
+    "blogImage": "https://i.ibb.co.com/p22DgXm/img3.jpg",
     "date": "21 Mar 2023",
     "time": "2 mins read",
     "title": "Technology of the future",
@@ -96,7 +99,8 @@
     ]
   },
   {
-    "blogImage": "../src/assets/article/img1.webp",
+    "articleId": 4,
+    "blogImage": "https://i.ibb.co.com/FbPS17h/img4.jpg",
     "date": "21 Mar 2023",
     "time": "2 mins read",
     "title": "Technology of the future",
@@ -125,7 +129,8 @@
     ]
   },
   {
-    "blogImage": "../src/assets/article/img1.webp",
+    "articleId": 5,
+    "blogImage": "https://i.ibb.co.com/H7rCbZY/img5.jpg",
     "date": "21 Mar 2023",
     "time": "2 mins read",
     "title": "Technology of the future",
@@ -154,7 +159,8 @@
     ]
   },
   {
-    "blogImage": "../src/assets/article/img1.webp",
+    "articleId": 6,
+    "blogImage": "https://i.ibb.co.com/3vXQC72/img6.jpg",
     "date": "21 Mar 2023",
     "time": "2 mins read",
     "title": "Without direction",
