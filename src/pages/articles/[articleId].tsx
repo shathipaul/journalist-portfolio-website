@@ -1,4 +1,5 @@
 import ArticleDetail from "@/components/articles/ArticleDetail";
+import ArticleFooter from "@/components/articles/ArticleFooter";
 import Layout from "@/layout/Layout";
 import { useRouter } from "next/router";
 import React, { ReactElement, useEffect, useState } from "react";
@@ -45,6 +46,7 @@ const ArticleDetails = () => {
   return (
     <div className="max-w-[960px] m-auto border border-lightGray py-16 px-20 my-20">
       <ArticleDetail article={article} />
+      <ArticleFooter />
     </div>
   );
 };
