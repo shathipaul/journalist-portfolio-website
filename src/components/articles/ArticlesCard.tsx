@@ -9,10 +9,10 @@ interface IArticleData {
   blogImage: string;
   date: string;
   time: string;
-  title?: string;
+  title: string;
   shortDes: string;
   description: Array<{
-    title: string;
+    title?: string;
     quote?: string;
     paragraph: string;
   }>;
@@ -55,7 +55,9 @@ const ArticlesCard = ({ articleData }: { articleData: IArticleData[] }) => {
                   </div>
                 </div>
               </div>
-              <HiOutlineDotsVertical />
+              <div>
+                <HiOutlineDotsVertical />
+              </div>
             </div>
             <div>
               <h2 className="capitalize italic text-[12px] md:text-[24px] baskervville-font">

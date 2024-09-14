@@ -56,7 +56,7 @@ const Navbar = () => {
           <Link
             key={index}
             href={data.link}
-            className={`px-4 text-base font-medium ${
+            className={`px-4 font-medium ${
               router.pathname === data.link ? "text-primary" : "text-gray"
             }`}
           >
