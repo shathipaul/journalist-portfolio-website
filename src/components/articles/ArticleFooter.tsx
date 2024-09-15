@@ -16,10 +16,10 @@ const ArticleFooter = () => {
   return (
     <div className="mt-10">
       <div className="flex items-center gap-10 py-6 text-2xl border-y-2 border-semiGray ">
-        <FaFacebookF className="hover:text-gray" />
-        <FaLinkedinIn className="hover:text-gray" />
-        <FaTwitter className="hover:text-gray" />
-        <FaLink className="hover:text-gray" />
+        <FaFacebookF className="hover:text-secondary" />
+        <FaLinkedinIn className="hover:text-secondary" />
+        <FaTwitter className="hover:text-secondary" />
+        <FaLink className="hover:text-secondary" />
       </div>
 
       <div className="mt-2 flex justify-between items-center">

@@ -26,13 +26,15 @@ const ArticleDetail = ({ article }: { article: IArticleData }) => {
           <div className="w-[50px]">
             <Image src={adminImg} alt="" />
           </div>
-          <div className="flex items-center gap-1">
-            <span>Admin</span>
-            <PiCrownSimpleFill />
-            {"."}
+          <div className="md:flex items-center gap-1">
+            <div className="flex items-center gap-2">
+              <span>Admin</span>
+              <PiCrownSimpleFill />
+            </div>
+            <div>
+              <span>{article.date}</span> {"."} <span>{article.time}</span>
+            </div>
           </div>
-          <span>{article.date}</span> {"."}
-          <span>{article.time}</span>
         </div>
         <div>
           <HiOutlineDotsVertical />
@@ -40,10 +42,10 @@ const ArticleDetail = ({ article }: { article: IArticleData }) => {
       </div>
       {/* Title and Image */}
       <div>
-        <h2 className="capitalize italic text-[12px] md:text-[40px] baskervville-font mb-6">
+        <h2 className="capitalize italic text-[30px] md:text-[40px] baskervville-font mb-6">
           {article.title}
         </h2>
-        <p className="mb-4 text-base font-semibold">{article.shortDes}</p>
+        <p className="mb-4 md:text-base font-semibold">{article.shortDes}</p>
         <div className="w-full h-full overflow-hidden">
           {" "}
           <Image
@@ -57,13 +59,16 @@ const ArticleDetail = ({ article }: { article: IArticleData }) => {
       </div>
       {/* Paragraph */}
       {article.description.map((data, index) => (
-        <div key={index} className="flex flex-col gap-4 text-lg">
-          <div className="italic text-2xl mt-4 border-l-4 border-gray pl-2">
+        <div
+          key={index}
+          className="flex flex-col gap-2 md:gap-4 text-base md:text-lg"
+        >
+          <p className="italic text-xl md:text-2xl mt-4 border-l-4 border-gray pl-2">
             {" "}
             {data.quote}
-          </div>
-          <div className="font-semibold">{data.title}</div>
-          <div className=""> {data.paragraph}</div>
+          </p>
+          <h3 className="font-semibold">{data.title}</h3>
+          <p className=""> {data.paragraph}</p>
         </div>
       ))}
     </div>

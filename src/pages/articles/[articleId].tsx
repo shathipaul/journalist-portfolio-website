@@ -44,7 +44,7 @@ const ArticleDetails = () => {
   }
 
   return (
-    <div className="max-w-[960px] m-auto border border-lightGray py-16 px-20 my-20">
+    <div className="max-w-[960px] m-auto border border-lightGray py-8 lg:py-16 px-4 md:px-20 my-10 md:my-20">
       <ArticleDetail article={article} />
       <ArticleFooter />
     </div>
