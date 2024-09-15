@@ -1,7 +1,7 @@
 import Image from "next/image";
 import adminImg from "@/assets/article/admin2.jpg";
 import { PiCrownSimpleFill } from "react-icons/pi";
-import { HiOutlineDotsVertical } from "react-icons/hi";
+import SocialIcon from "../common/SocialIcon";
 
 interface IArticleData {
   articleId: number;
@@ -36,9 +36,7 @@ const ArticleDetail = ({ article }: { article: IArticleData }) => {
             </div>
           </div>
         </div>
-        <div>
-          <HiOutlineDotsVertical />
-        </div>
+        <SocialIcon />
       </div>
       {/* Title and Image */}
       <div>
