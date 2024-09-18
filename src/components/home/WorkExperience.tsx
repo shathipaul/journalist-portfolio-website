@@ -22,7 +22,7 @@ const WorkExperience = () => {
         className="flex flex-col gap-10
      justify-center items-center py-10 px-4 border-4 border-secondary"
       >
-        <h2 className="capitalize italic text-[28px] md:text-[35px] baskervville-font">
+        <h2 className="capitalize italic text-center text-[28px] md:text-[35px] baskervville-font">
           Work experience
         </h2>
         {workData.map((data, index) => (
