@@ -1,10 +1,11 @@
-import type { ReactElement, ReactNode } from "react";
+import { useState, type ReactElement, type ReactNode } from "react";
 import type { NextPage } from "next";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 
 // ? Styles Import
 import "../styles/globals.css";
+import Loader from "@/components/common/Loader";
 // import Loader from '@/components/common/Loader';
 
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
@@ -19,6 +20,13 @@ export default function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   // Use the layout defined at the page level, if available
   const getLayout = Component.getLayout ?? ((page) => page);
 
+  const [isLoading, setIsLoading] = useState(true);
+  setTimeout(() => {
+    setIsLoading(false);
+  }, 2000);
+  if (isLoading) {
+    return <Loader />;
+  }
   return (
     <>
       <Head>

@@ -1,3 +1,4 @@
+import OpacityAnimation from "@/components/animation/OpacityAnimation";
 import About from "@/components/home/About";
 import ArticlesBtn from "@/components/home/ArticlesBtn";
 import Banner from "@/components/home/Banner";
@@ -10,18 +11,20 @@ import { ReactElement } from "react";
 
 export default function Home() {
   return (
-    <div className="relative">
-      <SideNav />
-      <Banner />
-      <About />
-      <WorkExperience />
-      <div className="border border-secondary w-20 m-auto rotate-[270deg]"></div>
-      <Education />
-      <div className="border border-secondary w-20 m-auto rotate-[270deg]"></div>
-      <ArticlesBtn />
-      <div className="border border-secondary w-20 m-auto rotate-[270deg]"></div>
-      <Contact />
-    </div>
+    <OpacityAnimation>
+      <div className="relative">
+        <SideNav />
+        <Banner />
+        <About />
+        <WorkExperience />
+        <div className="border border-secondary w-20 m-auto rotate-[270deg]"></div>
+        <Education />
+        <div className="border border-secondary w-20 m-auto rotate-[270deg]"></div>
+        <ArticlesBtn />
+        <div className="border border-secondary w-20 m-auto rotate-[270deg]"></div>
+        <Contact />
+      </div>
+    </OpacityAnimation>
   );
 }
 

@@ -28,7 +28,7 @@ const WorkExperience = () => {
         {workData.map((data, index) => (
           <div key={index} className="md:max-w-[440px]">
             <p className="text-center pb-4 font-semibold">{data.timeLine}</p>
-            <p className="text-center">{data.text}</p>
+            <p className="">{data.text}</p>
           </div>
         ))}
       </div>
