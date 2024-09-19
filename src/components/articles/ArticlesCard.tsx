@@ -5,7 +5,6 @@ import Link from "next/link";
 import { FaHeart, FaRegHeart } from "react-icons/fa";
 import { useState } from "react";
 import SocialIcon from "../common/SocialIcon";
-
 interface IArticleData {
   articleId: number;
   blogImage: string;
@@ -33,7 +32,6 @@ const ArticlesCard = ({ articleData }: { articleData: IArticleData[] }) => {
     <div>
       {articleData?.map((data, index) => (
         <div
-          // href={`/articles/${data.articleId}`}
           key={index}
           className="grid grid-cols-1 lg:grid-cols-2 gap-4 my-10 mx-4 md:mx-10 border border-lightGray"
         >
@@ -48,7 +46,7 @@ const ArticlesCard = ({ articleData }: { articleData: IArticleData[] }) => {
               alt="image"
               width={500}
               height={300}
-              priority
+              loading="lazy"
             />
           </Link>
           {/* Card Text */}

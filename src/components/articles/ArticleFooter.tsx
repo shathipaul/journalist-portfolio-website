@@ -1,9 +1,9 @@
+import Link from "next/link";
 import { useState } from "react";
 import {
-  FaFacebookF,
+  FaFacebook,
   FaLinkedinIn,
-  FaTwitter,
-  FaLink,
+  FaInstagramSquare,
   FaHeart,
   FaRegHeart,
 } from "react-icons/fa";
@@ -13,13 +13,30 @@ const ArticleFooter = () => {
   const toggleLike = () => {
     setIsLiked(!isLiked);
   };
+  const socialData = [
+    { icon: <FaFacebook />, link: "https://www.facebook.com/" },
+    {
+      icon: <FaLinkedinIn />,
+      link: "https://www.linkedin.com/in/shathipaul/",
+    },
+    {
+      icon: <FaInstagramSquare />,
+      link: "https://www.instagram.com/shathipaul11/",
+    },
+  ];
   return (
     <div className="mt-10">
       <div className="flex items-center gap-10 py-6 text-2xl border-y-2 border-semiGray ">
-        <FaFacebookF className="hover:text-secondary" />
-        <FaLinkedinIn className="hover:text-secondary" />
-        <FaTwitter className="hover:text-secondary" />
-        <FaLink className="hover:text-secondary" />
+        {socialData.map((data, index) => (
+          <Link
+            key={index}
+            href={data.link}
+            target="_blank"
+            className="text-2xl hover:text-secondary"
+          >
+            {data.icon}
+          </Link>
+        ))}
       </div>
 
       <div className="mt-2 flex justify-between items-center">

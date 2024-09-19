@@ -12,8 +12,11 @@ const Contact = () => {
   ];
   const socialData = [
     { icon: <FaFacebook />, link: "https://www.facebook.com/" },
-    { icon: <FaLinkedinIn />, link: "https://www.linkedin.com/" },
-    { icon: <FaInstagramSquare />, link: "https://www.instagram.com/" },
+    { icon: <FaLinkedinIn />, link: "https://www.linkedin.com/in/shathipaul/" },
+    {
+      icon: <FaInstagramSquare />,
+      link: "https://www.instagram.com/shathipaul11/",
+    },
   ];
   return (
     <div
@@ -34,7 +37,12 @@ const Contact = () => {
         ))}
         <div className="flex gap-6 justify-center ">
           {socialData.map((data, index) => (
-            <Link key={index} href={data.link} className="text-2xl">
+            <Link
+              key={index}
+              href={data.link}
+              target="_blank"
+              className="text-2xl hover:text-secondary"
+            >
               {data.icon}
             </Link>
           ))}

@@ -6,7 +6,6 @@ import Head from "next/head";
 // ? Styles Import
 import "../styles/globals.css";
 import Loader from "@/components/common/Loader";
-// import Loader from '@/components/common/Loader';
 
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
   getLayout?: (page: ReactElement) => ReactNode;
