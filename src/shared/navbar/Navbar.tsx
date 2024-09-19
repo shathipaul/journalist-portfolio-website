@@ -50,7 +50,7 @@ const Navbar = () => {
   }, [isOpen]);
 
   return (
-    <nav className="bg-secondary relative">
+    <nav className="container bg-secondary relative">
       <div className="hidden md:block py-6 md:ps-20 lg:ps-48">
         {menuData.map((data, index) => (
           <Link

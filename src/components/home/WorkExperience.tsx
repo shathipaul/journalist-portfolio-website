@@ -16,7 +16,7 @@ const WorkExperience = () => {
   return (
     <div
       id="work"
-      className="max-w-[280px] md:max-w-[560px] lg:max-w-[880px] m-auto mb-10"
+      className="w-full px-4 md:max-w-[560px] lg:max-w-[880px] m-auto mb-10"
     >
       <div
         className="flex flex-col gap-10
@@ -28,7 +28,7 @@ const WorkExperience = () => {
         {workData.map((data, index) => (
           <div key={index} className="md:max-w-[440px]">
             <p className="text-center pb-4 font-semibold">{data.timeLine}</p>
-            <p className="">{data.text}</p>
+            <p className="text-center">{data.text}</p>
           </div>
         ))}
       </div>

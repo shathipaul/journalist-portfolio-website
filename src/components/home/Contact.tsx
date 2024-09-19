@@ -18,7 +18,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="max-w-[280px] md:max-w-[560px] lg:max-w-[880px] m-auto my-10"
+      className="w-full px-4 md:max-w-[560px] lg:max-w-[880px] m-auto my-10"
     >
       <div className="flex flex-col gap-10 items-center py-10 px-4 border-4 border-secondary">
         <h2 className="capitalize italic text-[28px] md:text-[35px] baskervville-font">

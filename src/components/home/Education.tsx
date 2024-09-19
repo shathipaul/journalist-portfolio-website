@@ -14,7 +14,7 @@ const Education = () => {
   return (
     <div
       id="education"
-      className="max-w-[280px] md:max-w-[500px] lg:max-w-[700px] m-auto my-10"
+      className="w-full px-4 md:max-w-[500px] lg:max-w-[700px] m-auto my-10"
     >
       <div
         className="flex flex-col gap-10

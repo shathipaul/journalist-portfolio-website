@@ -9,7 +9,7 @@ const About = () => {
         About me
       </h2>
 
-      <div className="max-w-[280px] md:max-w-[580px]">
+      <div className="w-full px-4 md:max-w-[580px]">
         <p className=" pb-8">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
           facere iste! Deleniti, ab itaque est maxime quis amet exercitationem
