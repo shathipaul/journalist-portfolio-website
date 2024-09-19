@@ -50,41 +50,43 @@ const Navbar = () => {
   }, [isOpen]);
 
   return (
-    <nav className="container bg-secondary relative">
-      <div className="hidden md:block py-6 md:ps-20 lg:ps-48">
-        {menuData.map((data, index) => (
-          <Link
-            key={index}
-            href={data.link}
-            className={`px-4 font-medium ${
-              router.pathname === data.link ? "text-primary" : "text-gray"
-            }`}
-          >
-            {data.name}
-          </Link>
-        ))}
-      </div>
-      <div className="md:hidden">
-        <div className="flex justify-end pe-4">
-          <Hamburger size={26} toggled={isOpen} toggle={setOpen} />
-        </div>
-        <div
-          ref={menuRef}
-          id="mobile-menu"
-          className={`bg-white fixed top-0 z-50 pt-10 flex flex-col w-3/4 h-screen ${
-            isOpen ? "left-0" : "-left-full"
-          } duration-700 ease-in-out`}
-        >
+    <nav className="bg-secondary ">
+      <div className="container relative">
+        <div className="hidden md:block py-6 md:ps-20 lg:ps-48">
           {menuData.map((data, index) => (
             <Link
               key={index}
               href={data.link}
-              className="py-4 px-10 text-base font-medium"
-              onClick={() => setOpen(false)}
+              className={`px-4 font-medium ${
+                router.pathname === data.link ? "text-primary" : "text-gray"
+              }`}
             >
               {data.name}
             </Link>
           ))}
+        </div>
+        <div className="md:hidden">
+          <div className="flex justify-end pe-4">
+            <Hamburger size={26} toggled={isOpen} toggle={setOpen} />
+          </div>
+          <div
+            ref={menuRef}
+            id="mobile-menu"
+            className={`bg-white fixed top-0 z-50 pt-10 flex flex-col w-3/4 h-screen ${
+              isOpen ? "left-0" : "-left-full"
+            } duration-700 ease-in-out`}
+          >
+            {menuData.map((data, index) => (
+              <Link
+                key={index}
+                href={data.link}
+                className="py-4 px-10 text-base font-medium"
+                onClick={() => setOpen(false)}
+              >
+                {data.name}
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     </nav>
